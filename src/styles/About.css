@@ -1,0 +1,197 @@
+/* Add this to your existing CSS or create a new CSS file */
+
+body {
+    background-color: #000000;
+    margin: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about {
+    /*background: #08071d;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #ffffff;
+    text-shadow: 0 0 5px #00f7ff;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    color: #ffe2e2;
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight:lighter;
+}
+
+.skills,
+.education {
+    margin-top: 5px;
+}
+
+.skills h3,
+.education h3 {
+    color: #f3f1f1;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.skills ul,
+.education {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li,
+.timeline-item {
+    color: #ccc;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  flex-wrap: wrap;
+}
+
+.skills p{
+    margin-top: 10px;
+}
+
+.date {
+    color: #0099ff;
+    font-weight: li;
+    margin-right: 10px;
+}
+
+.timeline-item h4 {
+    margin: 0;
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.timeline-item p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 1rem;
+    line-height: 1.4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.school {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Spacing between image and content */
+  }
+  
+  .school img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: antiquewhite;
+    margin-right: 15px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column; /* Stack the content vertically */
+    align-items: flex-start; /* Align content to the start of the container */
+  }
+  
+ /* Responsive adjustments */
+@media (max-width: 500px) {
+    .school {
+      flex-direction: column; /* Stack image and content vertically */
+      align-items: center; /* Center the content and image */
+      margin-right: 0; /* Remove horizontal spacing */
+    }
+  
+    .school img {
+      width: 60px; /* Reduce image size for smaller screens */
+      height: 60px;
+      margin-bottom: 10px; /* Add spacing below the image */
+      margin-right: 0; /* Remove right margin */
+    }
+  
+    .content {
+      align-items: center; /* Center align content */
+      text-align: center; /* Center text for better readability */
+      width: 100%; /* Ensure it spans full width below image */
+    }
+  }
+  
+  @media (max-width: 425px) {
+    .school {
+      align-items: center; /* Center align image and content */
+    }
+  
+    .school img {
+      width: 50px; /* Further reduce image size */
+      height: 50px;
+    }
+  
+    .content {
+      text-align: left; /* Align text to the left for smaller screens */
+      width: 100%; /* Ensure it spans full width */
+    }
+  }
+
+.icon {
+    width: 30px; /* Adjust the width and height as needed */
+    height: 30px;
+    margin-right: 15px;
+}
+
+.timeline-item div {
+    flex-grow: 1; /* Allow the div to take up remaining space */
+}
+
+.education {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    text-align: center;
+}
+
+.timeBar {
+    border-radius: 20px;
+    width: 2px;
+    height: 50px;
+    background-color: rgb(255, 245, 99);
+    margin: 5px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+}
+
+
+.Askill{
+    float: left;
+    margin: 10px;
+    width:fit-content;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: rgb(0, 255, 255);
+  }
