@@ -1,7 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
 import profileImage from '../Images/Profile.jpg';
-import { AppBar, Toolbar, Button, Box } from '@mui/material';
 
 
 const Header = () => {
