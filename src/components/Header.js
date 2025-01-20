@@ -6,28 +6,9 @@ import { AppBar, Toolbar, Button, Box } from '@mui/material';
 
 const Header = () => {
 
-    const scrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      };
-
     return (
-    <div className='maindiv'>
-        <header >
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"></link>
-            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap"></link>
-            <div className="header-content">
-                <nav>
-                    <a href="#">Home</a>
-                    <a href="#" onClick={() => scrollToSection('about')}>About</a>
-                    <a href="#" onClick={() => scrollToSection('projects')}>Project</a>
-                    <a href="#" onClick={() => scrollToSection('contact')}>Contact</a>
-                    <div class="animation start-home"></div>
-                </nav>
-            </div>
-        </header>
+    <div className='maindiv' id='header'>
+        
         <div class="stick_follow_icon">
             <ul>
                 <li>
@@ -56,7 +37,7 @@ const Header = () => {
                     <div>
                     <a className = "resume" href='https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharing'>Resume  <pre> ></pre></a>
                     <a className = "resume" href='https://leetcode.com/u/Prabhav724/'>Leetcode  <pre> ></pre></a>
-                    <a className = "resume" href='https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharing'>Publication  <pre> ></pre></a>
+                    <a className = "resume" href='https://link.springer.com/chapter/10.1007/978-981-16-8862-1_55'>Publication  <pre> ></pre></a>
                     </div>
         </div>
     </div>

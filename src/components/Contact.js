@@ -82,7 +82,7 @@ const Contact = () => {
                 ></input>
                 </div>
                 <textarea name="message" placeholder="Type your message here"></textarea>
-                {/*<input type="submit" value="send" id="button"></input>*/}
+                <input type="submit" value="send" id="button"></input>
             </form>
         </div>
         
