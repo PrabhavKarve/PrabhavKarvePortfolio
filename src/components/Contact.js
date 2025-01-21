@@ -1,18 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import '../styles/contact.css'
 import emailjs from "emailjs-com";
+import { Container, Row, Col } from "react-bootstrap";
+import contactImg from "../Images/contact-img.svg";
+/*import 'animate.css';*/
+import TrackVisibility from 'react-on-screen';
+import { ToastContainer } from "react-toastify";
 
 const Contact = () => {
 
-    const [focusedInput, setFocusedInput] = useState(null);
+    const [status, setStatus] = useState({
+        success: "",
+        message: ""
+    });
 
-    const handleFocus = (inputId) => {
-        setFocusedInput(inputId);
-    };
-
-    const handleBlur = () => {
-        setFocusedInput(null);
-    };
+    const form = useRef();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -31,62 +33,71 @@ const Contact = () => {
     };
 
     return (
-    <section className="contact" id = "contact">
-        <div className="container">
-            <form onSubmit={handleSubmit}>
-                <h1>Contact me</h1>
-                <div style={{
-            display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "10px",
-        }}>
-                <input type="text" id="firstName" name = "from_name" placeholder="First Name" required 
-                onFocus={() => handleFocus('firstName')}
-                onBlur={handleBlur}
-                style={{
-                    borderBottomColor: focusedInput === 'firstName' ? '#cf88ff' : '#fff'
-                }}
-                ></input>
+        <section className="contact" id="contact" >
+            <Container>
+                <Row className="align-items-center">
+                    <Col size={12} md={6}>
+                        <TrackVisibility>
 
-                <input type="text" id="lastName" name = "lastname" placeholder="Last Name" required
-                onFocus={() => handleFocus('lastName')}
-                onBlur={handleBlur}
-                style={{
-                    borderBottomColor: focusedInput === 'lastName' ? '#cf88ff' : '#fff'
-                }}
-                ></input>
-                </div>
-                <div style={{
-                    display: "flex",
-                 flexWrap: "wrap",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "10px",
-                }}>
-                <input type="email" id="mobile" name = "email" placeholder="Email" required
-                onFocus={() => handleFocus('mobile')}
-                onBlur={handleBlur}
-                style={{
-                    borderBottomColor: focusedInput === 'mobile' ? '#cf88ff' : '#fff'
-                }}
-                ></input>
-
-                <input type="text" id="mobile" name = "mobile" placeholder="Mobile" required
-                onFocus={() => handleFocus('mobile')}
-                onBlur={handleBlur}
-                style={{
-                    borderBottomColor: focusedInput === 'mobile' ? '#cf88ff' : '#fff'
-                }}
-                ></input>
-                </div>
-                <textarea name="message" placeholder="Type your message here"></textarea>
-                <input type="submit" value="send" id="button"></input>
-            </form>
-        </div>
-        
-    </section>
+                            <img src={contactImg} alt="Contact Us" />
+                        </TrackVisibility>
+                    </Col>
+                    <Col size={12} md={6}>
+                        <TrackVisibility>
+                            <div>
+                                <h2>Get In Touch</h2>
+                                <form onSubmit={handleSubmit} ref={form}>
+                                    <Row>
+                                        <Col size={12} sm={6} className="px-1">
+                                            <input type="text" name="from_name" placeholder="Enter Name" />
+                                        </Col>
+                                        <Col size={12} sm={6} className="px-1">
+                                            <input type="email" name="user_email" placeholder="Enter Email" />
+                                        </Col>
+                                        <Col size={12} sm={12} className="px-1">
+                                            <input type="text" name="message" placeholder="Enter Message" />
+                                        </Col>
+                                        <Col size={12} className="px-1">
+                                            <input type="submit" value="Send" />
+                                        </Col>
+                                        {
+                                            status.success ?
+                                                <ToastContainer position="top-right"
+                                                    autoClose={5000}
+                                                    hideProgressBar={false}
+                                                    newestOnTop={false}
+                                                    closeOnClick
+                                                    rtl={false}
+                                                    pauseOnFocusLoss
+                                                    draggable
+                                                    pauseOnHover
+                                                    theme="light"
+                                                    type="success">
+                                                    {`Your request was successfully sent`}
+                                                </ToastContainer >
+                                                :
+                                                <ToastContainer position="top-right"
+                                                    autoClose={5000}
+                                                    hideProgressBar={false}
+                                                    newestOnTop={false}
+                                                    closeOnClick
+                                                    rtl={false}
+                                                    pauseOnFocusLoss
+                                                    draggable
+                                                    pauseOnHover
+                                                    theme="light"
+                                                    type="error">
+                                                    Something went wrong
+                                                </ToastContainer >
+                                        }
+                                    </Row>
+                                </form>
+                            </div>
+                        </TrackVisibility>
+                    </Col>
+                </Row>
+            </Container>
+        </section>
     )
 }
 

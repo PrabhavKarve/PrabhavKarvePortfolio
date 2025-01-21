@@ -8,8 +8,8 @@ body {
 
 .stick_follow_icon a svg {
   padding-top:20px;
-  height: 30px; /* Adjust the height as needed */
-  width: 30px;  /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  width: 50px;  /* Adjust the width as needed */
 }
 
 
@@ -73,6 +73,10 @@ body {
 .maindiv{
   height: 100%;
   
+}
+
+.profile-container a{
+  color: #ffffff;
 }
   
 .header-content {

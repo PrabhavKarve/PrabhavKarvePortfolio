@@ -6,7 +6,7 @@ import profileImage from '../Images/Profile.jpg';
 const Header = () => {
 
     return (
-    <div className='maindiv' id='header'>
+    <div className='maindiv' id = 'header'>
         
         <div class="stick_follow_icon">
             <ul>
@@ -34,9 +34,10 @@ const Header = () => {
                         <p className="opening-line" class="typing-animation">I am probably coding or playing pool rn   .  .  .  . </p>
                     </div>
                     <div>
-                    <a className = "resume" href='https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharing'>Resume  <pre> ></pre></a>
-                    <a className = "resume" href='https://leetcode.com/u/Prabhav724/'>Leetcode  <pre> ></pre></a>
-                    <a className = "resume" href='https://link.springer.com/chapter/10.1007/978-981-16-8862-1_55'>Publication  <pre> ></pre></a>
+                    <a className="resume" href="https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="resume" href="https://leetcode.com/u/Prabhav724/" target="_blank" rel="noopener noreferrer">Leetcode</a>
+                    <a className="resume" href="https://link.springer.com/chapter/10.1007/978-981-16-8862-1_55" target="_blank" rel="noopener noreferrer">Publication</a>
+
                     </div>
         </div>
     </div>
