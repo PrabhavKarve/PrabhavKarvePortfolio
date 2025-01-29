@@ -5,6 +5,10 @@ body {
     margin: 0;
   }
 
+.maindiv{
+  height: 100%;
+}
+
 
 .stick_follow_icon a svg {
   padding-top:20px;
@@ -69,11 +73,6 @@ body {
     position: fixed;
     width: 100%;
   }
-
-.maindiv{
-  height: 100%;
-  
-}
 
 .profile-container a{
   color: #ffffff;

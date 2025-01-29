@@ -73,8 +73,8 @@ const Projects = () => {
                                     <span className="text-gray-800 py-1 project-tech">MongoDB</span>
                                 </div>
                                 <div class="bordered-div">
-                                    <a href="https://github.com/PrabhavKarve/F1bnb/blob/main/README.md" target="_blank" title="View Project">
-                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                                    <a href="https://f1bnb-frontend.vercel.app/#logout" target="_blank" title="View Project">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M326.6 185.4c14.6-14.6 33.8-22.6 54.4-22.6s39.8 8 54.4 22.6l22.6 22.6c14.6 14.6 22.6 33.8 22.6 54.4s-8 39.8-22.6 54.4l-56 56c-14.6 14.6-33.8 22.6-54.4 22.6s-39.8-8-54.4-22.6c-6.3-6.3-6.3-16.4 0-22.6s16.4-6.3 22.6 0c9.8 9.8 22.9 15.2 36.7 15.2s26.9-5.4 36.7-15.2l56-56c9.8-9.8 15.2-22.9 15.2-36.7s-5.4-26.9-15.2-36.7l-22.6-22.6c-9.8-9.8-22.9-15.2-36.7-15.2s-26.9 5.4-36.7 15.2c-6.3 6.3-16.4 6.3-22.6 0s-6.3-16.4 0-22.6zM185.4 326.6c-14.6 14.6-33.8 22.6-54.4 22.6s-39.8-8-54.4-22.6l-22.6-22.6C39.4 289.4 31.4 270.2 31.4 249.6s8-39.8 22.6-54.4l56-56c14.6-14.6 33.8-22.6 54.4-22.6s39.8 8 54.4 22.6c6.3 6.3 6.3 16.4 0 22.6s-16.4 6.3-22.6 0c-9.8-9.8-22.9-15.2-36.7-15.2s-26.9 5.4-36.7 15.2l-56 56c-9.8 9.8-15.2 22.9-15.2 36.7s5.4 26.9 15.2 36.7l22.6 22.6c9.8 9.8 22.9 15.2 36.7 15.2s26.9-5.4 36.7-15.2c6.3-6.3 16.4-6.3 22.6 0s6.3 16.4 0 22.6zM329.2 182.8c6.3 6.3 6.3 16.4 0 22.6l-128 128c-6.3 6.3-16.4 6.3-22.6 0s-6.3-16.4 0-22.6l128-128c6.2-6.3 16.4-6.3 22.6 0z"></path>
                                         </svg>
                                     </a>
