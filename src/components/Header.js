@@ -34,7 +34,7 @@ const Header = () => {
                         <p className="opening-line" class="typing-animation">I am probably coding or playing pool rn   .  .  .  . </p>
                     </div>
                     <div>
-                    <a className="resume" href="https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+                    <a className="resume" href="https://drive.google.com/file/d/1D5MmGkeD7EV_SLruj0-Ph8sILHiAfRml/view?usp=sharin" target="_blank" rel="noopener noreferrer">Resume</a>
                     <a className="resume" href="https://leetcode.com/u/Prabhav724/" target="_blank" rel="noopener noreferrer">Leetcode</a>
                     <a className="resume" href="https://link.springer.com/chapter/10.1007/978-981-16-8862-1_55" target="_blank" rel="noopener noreferrer">Publication</a>
 
